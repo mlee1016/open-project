@@ -32,8 +32,8 @@ nav2 = {
         st.Page("Russian_stream_copy.py", title="Type-in"),
     ],
     "Russian - Other options": [
-        st.Page("russian_lookat_listcopy.py", title="All lists"),
-        st.Page("russian_studyingphrasescopy.py", title="Phrase's Definition"),
+        st.Page("Russian_lookat_listcopy.py", title="All lists"),
+        st.Page("Russian_studyingphrasescopy.py", title="Phrase's Definition"),
 
     ],
     

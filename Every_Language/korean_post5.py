@@ -139,8 +139,8 @@ if options != None or options == "":
       if st.session_state.e < len(studying_list):
         st.write("Question:",str(st.session_state.e+1),"/",str(len(studying_list)))
       #if korean_present_polite.getDefault_Name() == "Korean Present Polite Speech:":
-      if on == False:
-        st.audio(All_Audio_korean[0][st.session_state['e']], format="mp3/audio")
+      #if on == False:
+        #st.audio(All_Audio_korean[0][st.session_state['e']], format="mp3/audio")
 
       question = st.radio(f"What does this mean: {studying_list[st.session_state['e']][0]}",[" ",studying_list[rand_List(st.session_state.e)[0]][1],studying_list[rand_List(st.session_state.e)[1]][1],studying_list[rand_List(st.session_state.e)[2]][1],studying_list[rand_List(st.session_state.e)[3]][1]])
       if studying_list[st.session_state.e][1] == question:

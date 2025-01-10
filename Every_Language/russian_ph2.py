@@ -4,43 +4,43 @@ import copy
 from all_audio_russian import *
 default_Ru_Ph = [[] for i in range(7)]
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\russian_ph.csv', encoding="utf-8") as f:
+with open(r'Every_Language/russian_ph.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[0] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Russian_prepositional.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Russian_prepositional.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[1] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Russian_Instrumental.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Russian_Instrumental.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[2] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\russian_dative.csv', encoding="utf-8") as f:
+with open(r'Every_Language/russian_dative.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[3] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Russian_acusative.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Russian_acusative.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[4] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Russian_nominative.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Russian_nominative.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[5] = list(reader)
 
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Russian_genitive.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Russian_genitive.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ru_Ph[6] = list(reader)
 

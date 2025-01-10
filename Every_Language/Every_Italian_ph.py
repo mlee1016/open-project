@@ -3,32 +3,32 @@ import copy
 
 #from audio_ko import ko_polite_present, ko_polite_useful
 default_Ko_Ph = [[] for i in range(7)]
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_useful_phrases.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_useful_phrases.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[0] = list(reader)
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_useful_phrases2.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_useful_phrases2.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[1] = list(reader)
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_partive_article2.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_partive_article2.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[2] = list(reader)
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_partitive_article.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_partitive_article.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[3] = list(reader)
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_common_phrases.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_common_phrases.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[4] = list(reader)
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_restaurant_phrases.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_restaurant_phrases.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[5] = list(reader)
 
 
-with open(r'C:\Users\Owner\OneDrive\Desktop\css-HTML\open-project\Every_Language\Italian_tourist_spots.csv', encoding="utf-8") as f:
+with open(r'Every_Language/Italian_tourist_spots.csv', encoding="utf-8") as f:
     reader = csv.reader(f)
     default_Ko_Ph[6] = list(reader)
 

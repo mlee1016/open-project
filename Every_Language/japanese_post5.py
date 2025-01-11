@@ -48,12 +48,12 @@ if options != None or options == "":
 #st.cache_data.clear()
 #if int(options[2])%2 != 0: 
 
-  studying_list2:list = All_Japanese_lists[int(str(options[0]))-1].de_ko_List
+  studying_list:list = All_Japanese_lists[int(str(options[0]))-1].de_ko_List
   
   
 
   
-  df1 = pd.DataFrame(studying_list2)
+  df1 = pd.DataFrame(studying_list)
   sol = df1.columns.tolist()
   studying_list = df1[[sol[0],sol[2]]].to_numpy().tolist()
 

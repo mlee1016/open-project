@@ -1,7 +1,15 @@
 [theme]
-base="light"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#31333F"
-font="sans serif"
-base="dark"
-primaryColor="purple"
+Primarycolor=#3FE0CE
+
+
+Background color=#BB6363
+
+Text color=#E2E4EA
+Secondary background color=#264B90
+
+
+
+
+
+
+Font family=Monospace

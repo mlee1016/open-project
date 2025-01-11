@@ -35,7 +35,7 @@ if options != None or options == "":
   
   df1 = pd.DataFrame(studying_list)
   sol = df1.columns.tolist()
-  en_ko = df1[[sol[0],sol[2]]].to_numpy().tolist()
+  en_ko = df1[[sol[2],sol[0]]].to_numpy().tolist()
     #st.write(*en_ko)
   #else:
     #studying_list:list = list(All_words_korean[int(str(options[0]))-1]) 

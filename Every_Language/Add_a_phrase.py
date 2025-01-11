@@ -14,7 +14,10 @@ if upload_file is not None:
   df = pd.read_csv(upload_file)
   name_of_Phrases:str = st.text_input("Add a name to list")
   user_phrase = df.columns.tolist()
-  user_phrase_1 = df[[user_phrase[0],user_phrase[1]]].to_numpy().tolist()
+  if la == 'Japanese':
+    user_phrase_1=df[[user_phrase[0],user_phrase[1]user_phrase[2]]].to_numpy().tolist()
+  else:
+    user_phrase_1 = df[[user_phrase[0],user_phrase[1]]].to_numpy().tolist()
   st.write("Check if phrases is correct then click submit")
   st.write(df)
   if st.button("submit"):

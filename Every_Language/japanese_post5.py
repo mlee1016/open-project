@@ -55,7 +55,7 @@ if options != None or options == "":
   # 0 = kanji : 1 = hiragana/katagana : 2 = english 
   df1 = pd.DataFrame(studying_list)
   sol = df1.columns.tolist()
-  studying_list = df1[[sol[0],sol[2]]].tolist()
+  studying_list = df1[['0','2']].to_numpy().tolist()
 
   en_ko = df1[[sol[2],sol[0]]].to_numpy().tolist()
 

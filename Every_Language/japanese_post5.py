@@ -44,19 +44,17 @@ if 'e' not in st.session_state:
 
 options:str = st.selectbox("Pick a list to study:",(korean_study_ist),index=None,placeholder="Select List")
 studying_list = []
+studying_list4 = []
 if options != None or options == "":
 #st.cache_data.clear()
 #if int(options[2])%2 != 0: 
 
   studying_list:list = All_Japanese_lists[int(str(options[0]))-1].de_ko_List
-  st.write(studying_list)
   
 
-  
+  # 0 = kanji : 1 = hiragana/katagana : 2 = english 
   df1 = pd.DataFrame(studying_list)
-  st.write(df1)   
   sol = df1.columns.tolist()
-  st.write(sol)         
   studying_list = df1[[sol[0],sol[2]]].to_numpy().tolist()
 
   en_ko = df1[[sol[2],sol[0]]].to_numpy().tolist()

@@ -66,7 +66,7 @@ if options != None or options == "":
     try:
         Ko_Linked_list2= LinkedList()
         Ko_Linked_list = LinkedList()
-        on = st.toggle("Korean -> English")
+        on = st.toggle("japanese-> English")
         if on:
             st.write("Feature activated!")
             

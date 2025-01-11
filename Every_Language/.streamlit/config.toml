@@ -2,14 +2,14 @@
 Primarycolor=#3FE0CE
 
 
-Background color=#BB6363
+Backgroundcolor=#BB6363
 
-Text color=#E2E4EA
-Secondary background color=#264B90
-
-
+Textcolor=#E2E4EA
+Secondarybackgroundcolor=#264B90
 
 
 
 
-Font family=Monospace
+
+
+Fontfamily=Monospace

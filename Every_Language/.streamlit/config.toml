@@ -1,15 +1,15 @@
 [theme]
-Primarycolor=#3FE0CE
+primaryColor="#3FE0CE"
 
 
-Backgroundcolor=#BB6363
+backgroundColor="#BB6363"
 
-Textcolor=#E2E4EA
-Secondarybackgroundcolor=#264B90
-
-
-
+textColor="#E2E4EA"
+secondaryBackgroundColor="#264B90"
 
 
 
-Fontfamily=Monospace
+
+
+
+fontFamily="Monospace"

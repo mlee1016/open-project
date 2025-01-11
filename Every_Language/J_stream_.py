@@ -120,7 +120,7 @@ if options != None or options == "":
     #st.write("".join(str(ord(e)) for e in str1_norm))
     #st.write("".join(str(ord(h)) for h in str2_norm))  
 
-    if str1_norm == str(str2_norm):
+    if str1_norm.upper() == str2_norm.upper():
       question = get_n()
       st.session_state.a +=1
       st.success("correct")

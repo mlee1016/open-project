@@ -55,9 +55,8 @@ if options != None or options == "":
     #t_c.write(korean_particle_polite.de_ko_List[i][1])
     #t_c.write(korean_particle_polite.de_ko_List[i][2])
 
-  try:  
-        
-    
+
+
     
     on = st.toggle("Korean -> English (Note : need a Korean Keyboard)")
     if on:
@@ -97,6 +96,9 @@ if options != None or options == "":
       question = get_n()
       #st.write(korean_present_polite.de_ko_List[0][1])
       
+  try:  
+        
+    
     if st.session_state.a+1 <= 15:
       st.write(f"{st.session_state.a+1}","/",str(len(studying_list))) 
 

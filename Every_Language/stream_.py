@@ -96,46 +96,46 @@ if options != None or options == "":
       question = get_n()
       #st.write(korean_present_polite.de_ko_List[0][1])
       
-  try:  
+    try:  
+            
         
+        if st.session_state.a+1 <= 15:
+          st.write(f"{st.session_state.a+1}","/",str(len(studying_list))) 
     
-    if st.session_state.a+1 <= 15:
-      st.write(f"{st.session_state.a+1}","/",str(len(studying_list))) 
-
-
-    if not on2:
-      st.audio(All_Audio_korean[0][st.session_state['a']], format="mp3/audio")
-
-
-    current_Phrases = studying_list[st.session_state.a][0]
-    if on3:
-      current_Phrases = ""
-      
-    input_r = st.text_input(f"Type the meaning of this phrase '{current_Phrases}' : ",placeholder="Type in English/Korean",autocomplete=None)
-    if on:
-      st.write("Shuffled Phrase:")
-      st.write(*shuffle_list)
-    str1_norm = make_alpha(input_r)
-    str2_norm = make_alpha(str(studying_list[st.session_state.a][1]))
-    #str1_norm = unicodedata.normalize('NFC', input_r)
-    #str2_norm = unicodedata.normalize('NFC', korean_present_polite.de_ko_List[st.session_state.a][1])
-
-    #st.write("".join(str(ord(e)) for e in str1_norm))
-    #st.write("".join(str(ord(h)) for h in str2_norm))  
-
-    if str1_norm.upper() == str2_norm.upper():
-      question = get_n()
-      st.session_state.a +=1
-      st.success("correct")
-      st.button("->")
-    elif str1_norm == "":
-      pass
-    else:
-      st.error("nope")
-      
-      st.session_state.ls.append(f"{st.session_state.a}")
-      
-  except(StopIteration,IndexError):
+    
+        if not on2:
+          st.audio(All_Audio_korean[0][st.session_state['a']], format="mp3/audio")
+    
+    
+        current_Phrases = studying_list[st.session_state.a][0]
+        if on3:
+          current_Phrases = ""
+          
+        input_r = st.text_input(f"Type the meaning of this phrase '{current_Phrases}' : ",placeholder="Type in English/Korean",autocomplete=None)
+        if on:
+          st.write("Shuffled Phrase:")
+          st.write(*shuffle_list)
+        str1_norm = make_alpha(input_r)
+        str2_norm = make_alpha(str(studying_list[st.session_state.a][1]))
+        #str1_norm = unicodedata.normalize('NFC', input_r)
+        #str2_norm = unicodedata.normalize('NFC', korean_present_polite.de_ko_List[st.session_state.a][1])
+    
+        #st.write("".join(str(ord(e)) for e in str1_norm))
+        #st.write("".join(str(ord(h)) for h in str2_norm))  
+    
+        if str1_norm.upper() == str2_norm.upper():
+          question = get_n()
+          st.session_state.a +=1
+          st.success("correct")
+          st.button("->")
+        elif str1_norm == "":
+          pass
+        else:
+          st.error("nope")
+          
+          st.session_state.ls.append(f"{st.session_state.a}")
+          
+    except(StopIteration,IndexError):
     #if st.session_state.a == len(studying_list):
       st.write("You completed the list.")
       st.write(st.session_state.ls)

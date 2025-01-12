@@ -10,6 +10,8 @@ la = st.selectbox("Choose a language",("Select","Korean","Russian","Italian","Ja
 st.title("Add some phrases")
 upload_file = st.file_uploader("Choose a csv file: ",type="csv")
 
+st.write("Korean,Russian,Italian,Geramn: column 1 = targeted lang, column 2 = english")
+st.write(""Japanese: col1 = kanji, col2 = hiragana/katakana, col3 = english)
 if upload_file is not None:
   df = pd.read_csv(upload_file)
   name_of_Phrases:str = st.text_input("Add a name to list")
@@ -43,6 +45,7 @@ if upload_file is not None:
       user_custom = Korean(name_of_Phrases,user_phrase_1)
       All_russian_lists.append(user_custom)
     else:
-      st.write("Choose a language")
+      st.error("Choose a language")
 
-    st.success("Success")
+    if la is not " " or "Select":
+      st.success("Success")

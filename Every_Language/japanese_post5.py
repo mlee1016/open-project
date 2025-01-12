@@ -190,7 +190,6 @@ if options != None or options == "":
     #st.balloons()
     if st.button("study again"):
       st.cache_data.clear()
-      st.session_state.e = 0
+      st.session_state['e'] = 0
       studying_list = []
-    
       st.rerun()

@@ -59,8 +59,8 @@ if options != None or options == "":
         
     
     
-      on = st.toggle("Korean -> English (Note : need a Korean Keyboard)")
-      if on:
+    on = st.toggle("Korean -> English (Note : need a Korean Keyboard)")
+    if on:
           
           studying_list = en_ko
           #for i in range (len(list(en_ko[st.session_state.a][1]))):
@@ -71,28 +71,28 @@ if options != None or options == "":
           #st.write(list(en_ko[st.session_state.a][1])[i])
           
           
-      on2 = st.toggle("No Audio")
-      if on2:
+    on2 = st.toggle("No Audio")
+    if on2:
         pass
-      on3 = st.toggle("No words")
-      if on3:
-         pass
-      def gen2():
+    on3 = st.toggle("No words")
+    if on3:
+        pass
+    def gen2():
         #for s in range(15):
-          yield studying_list[0][0]##############Korean present polite
-          yield studying_list[1][0]
-          yield studying_list[2][0]
+        yield studying_list[0][0]##############Korean present polite
+        yield studying_list[1][0]
+        yield studying_list[2][0]
         
     
-      y = gen2()
+    y = gen2()
     
-      def get_n() -> str:
+    def get_n() -> str:
         return next(y)
-      input_r = ""
+    input_r = ""
     
-      if 'ls' not in st.session_state:
+    if 'ls' not in st.session_state:
         st.session_state.ls = []
-      if 'a' not in st.session_state:
+    if 'a' not in st.session_state:
         st.session_state['a'] = 0
       question = get_n()
       #st.write(korean_present_polite.de_ko_List[0][1])

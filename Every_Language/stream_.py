@@ -58,6 +58,7 @@ if options != None or options == "":
 
 
     try:  
+    ####E
         on = st.toggle("Korean -> English (Note : need a Korean Keyboard)")
         if on:
               
@@ -134,14 +135,14 @@ if options != None or options == "":
           st.error("nope")
           
           st.session_state.ls.append(f"{st.session_state.a}")
-          
+    ####e      
     except(StopIteration,IndexError):
-    #if st.session_state.a == len(studying_list):
+      #if st.session_state.a == len(studying_list):
       st.write("You completed the list.")
-      st.write(st.session_state.ls)
-      error = set(st.session_state.ls)
-      st.write(error)
-      st.write(f"%{(st.session_state.a-error.__len__())/(st.session_state.a-1)*100}")
+      #st.write(st.session_state.ls)
+      #error = set(st.session_state.ls)
+      #st.write(error)
+      #st.write(f"%{(st.session_state.a-error.__len__())/(st.session_state.a-1)*100}")
       
       st.balloons()
       #if st.button("again"):

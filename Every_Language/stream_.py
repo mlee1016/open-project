@@ -144,12 +144,12 @@ if options != None or options == "":
       #st.write(error)
       #st.write(f"%{(st.session_state.a-error.__len__())/(st.session_state.a-1)*100}")
       
-      st.balloons
+      st.balloons()
       if st.button("Again"):
     
           st.cache_data.clear()
           st.session_state.a = 0
-          studying_list = []
+          
     
       st.rerun()
       #if st.button("again"):

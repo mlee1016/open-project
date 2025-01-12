@@ -93,7 +93,7 @@ if options != None or options == "":
         st.session_state.ls = []
     if 'a' not in st.session_state:
         st.session_state['a'] = 0
-      question = get_n()
+    question = get_n()
       #st.write(korean_present_polite.de_ko_List[0][1])
       
     try:  

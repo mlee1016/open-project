@@ -151,9 +151,9 @@ if options != None or options == "":
     
           st.cache_data.clear()
           st.session_state.a = 0
-          
+          studying_list = []
     
-      st.rerun()
+          st.rerun()
       #if st.button("again"):
         #st.cache_data.clear()
         #st.session_state.a = 0

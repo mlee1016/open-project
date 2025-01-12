@@ -30,23 +30,23 @@ options:str = st.selectbox("Pick a list to study:",(
 
 
 if options != None or options == "":
-  studying_list = []
-#if (int(options[2])%2 != 0): 
-  studying_list:list = All_korean_lists[int(str(options[0]))-1].de_ko_List
-  
-  df1 = pd.DataFrame(studying_list)
-  sol = df1.columns.tolist()
-  en_ko = df1[[sol[1],sol[0]]].to_numpy().tolist()
-    #st.write(*en_ko)
-  #else:
-    #studying_list:list = list(All_words_korean[int(str(options[0]))-1]) 
-
+    studying_list = []
+    #if (int(options[2])%2 != 0): 
+    studying_list:list = All_korean_lists[int(str(options[0]))-1].de_ko_List
+      
+    df1 = pd.DataFrame(studying_list)
+    sol = df1.columns.tolist()
+    en_ko = df1[[sol[1],sol[0]]].to_numpy().tolist()
+        #st.write(*en_ko)
+      #else:
+        #studying_list:list = list(All_words_korean[int(str(options[0]))-1]) 
+    
     #df1 = pd.DataFrame(studying_list)
     #st.write(df1)
-  #df = pd.DataFrame(list(korean_useful_polite_words))
-  #st.write(df)
-  #############################################
-  #for i in range(len(korean_particle_polite.de_ko_List)):
+    #df = pd.DataFrame(list(korean_useful_polite_words))
+    #st.write(df)
+    #############################################
+    #for i in range(len(korean_particle_polite.de_ko_List)):
     #t_c = st.container(border=True,key=i)
 
     #t_c.audio(ko_polite_present[i],format="mp3/audio")   

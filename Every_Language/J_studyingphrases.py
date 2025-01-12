@@ -116,16 +116,11 @@ if options != None or options == "":
 
     
     st.write("You completed the list.")
-    st.write(st.session_state.ls)
-    error = set(st.session_state.ls)
-    st.write(error)
-    st.write(f"%{(st.session_state.a-error.__len__())/(st.session_state.a-1)*100}")
-        
-    st.balloons()
+    st.cache_data.clear()
+    st.session_state['num'] = 0
+    studying_list = []
 
-
-
-
+    st.rerun()
 
     
 

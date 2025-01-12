@@ -28,7 +28,7 @@ with col3:
   
 with col4: 
 
-  st.audio("Every_Language\korean_present_polite.mp3",format="audio/mp3")
+  st.audio("Every_Language/korean_present_polite.mp3",format="audio/mp3")
   st.write(All_korean_lists[3].de_ko_name)
   df_1 = pd.DataFrame(All_korean_lists[3].de_ko_List)
   st.write(df_1)
@@ -47,7 +47,7 @@ with col2:
   st.write(df_1)
 
 with col3:
-  st.audio("Every_Language\korean_past_polite.mp3",format="audio/mp3")
+  st.audio("Every_Language/korean_past_polite.mp3",format="audio/mp3")
   st.write(All_korean_lists[6].de_ko_name)
   df_1 = pd.DataFrame(All_korean_lists[6].de_ko_List)
   st.write(df_1)

@@ -11,7 +11,7 @@ st.title("Add some phrases")
 upload_file = st.file_uploader("Choose a csv file: ",type="csv")
 
 st.write("Korean,Russian,Italian,Geramn: column 1 = targeted lang, column 2 = english")
-st.write(""Japanese: col1 = kanji, col2 = hiragana/katakana, col3 = english)
+st.write("Japanese: col1 = kanji, col2 = hiragana/katakana, col3 = english")
 if upload_file is not None:
   df = pd.read_csv(upload_file)
   name_of_Phrases:str = st.text_input("Add a name to list")

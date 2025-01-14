@@ -88,7 +88,7 @@ if options != None or options == "":
     
 
 #else:
-  studying_list:list = list(All_words_korean[int(str(options[0]))-1]) 
+  #studying_list:list = list(All_words_korean[int(str(options[0]))-1]) 
   
   
     #st.rerun()

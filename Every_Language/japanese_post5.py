@@ -132,7 +132,7 @@ if options != None or options == "":
          #if 'd' not in st.session_state:
               #st.session_state['d'] = 0
         
-        if options != None:
+         if options != None:
           @st.cache_data
           def rand_List(n_phrases: int):
               

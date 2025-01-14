@@ -59,7 +59,7 @@ if options != None or options == "":
 
   #st.write(df1)
   sol = df1.columns.tolist()
-  studying_list = df1[[sol[0],sol[2],sol[1]]].to_numpy().tolist
+  studying_list = df1[[sol[0],sol[2],sol[1]]].to_numpy().tolist()
 
   en_ko = df1[[sol[2],sol[0],sol[1]]].to_numpy().tolist()
 

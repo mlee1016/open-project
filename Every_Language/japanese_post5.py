@@ -195,6 +195,6 @@ if options != None or options == "":
       st.cache_data.clear()
       st.session_state.e = 0
       studying_list = []
-    
+      en_ko = []      
       st.rerun()
       

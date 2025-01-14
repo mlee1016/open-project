@@ -68,8 +68,8 @@ if options != None or options == "":
     
     #st.rerun()
 
-    
-
+####  #  
+  try:
 
     #if 'no' not in st.session_state:
       #st.session_state.no = False
@@ -92,73 +92,73 @@ if options != None or options == "":
 
     
 
-
+        
+          
+        
+        
+            
+          if 'no' not in st.session_state:
+            st.session_state.no = False
+          if 'rando_list' not in st.session_state:
+            st.session_state.rando_list = [0,1,2,3]
+          if 'rand_list' not in st.session_state:
+            st.session_state.rand_list = [0,1,2,3]
+        
+        
+          on = st.toggle("Japanese -> English")
+          if on:
+              #st.write("Feature activated!")
+              studying_list = en_ko
+              #for i in range (len(list(en_ko[st.session_state.a][1]))):
+              shuffle_list = list(en_ko[st.session_state.e2][1])
+              random.shuffle((shuffle_list))
+              #st.write(*shuffle_list)
+            #df1 = pd.DataFrame(studying_list)
+            #st.write(df1)
+          h_k = st.toggle("hiragana/katakana")
+          if h_k: 
+            studying_list = studying_list4
+          if on:
+              studying_list = en_ko2
+             
+            #if 'no' not in st.session_state:
+              #st.session_state.no = False
+            #if 'rando_list' not in st.session_state:
+              #st.session_state.rando_list = [0,1,2,3]
+            #if 'rand_list' not in st.session_state:
+              #st.session_state.rand_list = [0,1,2,3]
+        
+        
+         #if 'd' not in st.session_state:
+              #st.session_state['d'] = 0
+        
+        if options != None:
+          @st.cache_data
+          def rand_List(n_phrases: int):
+              
+         st.session_state.rand_list = [None]*len(studying_list)
+         for i in range(len(studying_list)):
+                  st.session_state.rand_list[i] = i
+                #print(*rand_list)
+         random.shuffle(st.session_state.rand_list)
+                #print(*rand_list)
+         st.session_state.rando_list = [st.session_state.rand_list[0],st.session_state.rand_list[1],st.session_state.rand_list[2]]
+         st.session_state.rando_list.append(st.session_state.e2)
+              #print(*st.session_state.rando_list)
+         random.shuffle(st.session_state.rando_list)
+         return st.session_state.rando_list
+              #print(*st.session_state.rando_list)
+              
+        
+        
+        def nextQuestion():
+              st.session_state['e2'] +=1
+        
+            #a1 = studying_list[st.session_state.rando_list[0]][1]
+            #a2 = studying_list[st.session_state.rando_list[1]][1]
+            #a3 = studying_list[st.session_state.rando_list[2]][1]
+              #a4 = studying_list[st.session_state.rando_list[3]][1]
   
-
-
-    
-  if 'no' not in st.session_state:
-    st.session_state.no = False
-  if 'rando_list' not in st.session_state:
-    st.session_state.rando_list = [0,1,2,3]
-  if 'rand_list' not in st.session_state:
-    st.session_state.rand_list = [0,1,2,3]
-
-
-  on = st.toggle("Japanese -> English")
-  if on:
-      #st.write("Feature activated!")
-      studying_list = en_ko
-      #for i in range (len(list(en_ko[st.session_state.a][1]))):
-      shuffle_list = list(en_ko[st.session_state.e2][1])
-      random.shuffle((shuffle_list))
-      #st.write(*shuffle_list)
-    #df1 = pd.DataFrame(studying_list)
-    #st.write(df1)
-  h_k = st.toggle("hiragana/katakana")
-  if h_k: 
-    studying_list = studying_list4
-    if on:
-      studying_list = en_ko2
-     
-    #if 'no' not in st.session_state:
-      #st.session_state.no = False
-    #if 'rando_list' not in st.session_state:
-      #st.session_state.rando_list = [0,1,2,3]
-    #if 'rand_list' not in st.session_state:
-      #st.session_state.rand_list = [0,1,2,3]
-
-
-  #if 'd' not in st.session_state:
-      #st.session_state['d'] = 0
-
-  if options != None:
-    @st.cache_data
-    def rand_List(n_phrases: int):
-      
-      st.session_state.rand_list = [None]*len(studying_list)
-      for i in range(len(studying_list)):
-          st.session_state.rand_list[i] = i
-        #print(*rand_list)
-      random.shuffle(st.session_state.rand_list)
-        #print(*rand_list)
-      st.session_state.rando_list = [st.session_state.rand_list[0],st.session_state.rand_list[1],st.session_state.rand_list[2]]
-      st.session_state.rando_list.append(st.session_state.e2)
-      #print(*st.session_state.rando_list)
-      random.shuffle(st.session_state.rando_list)
-      return st.session_state.rando_list
-      #print(*st.session_state.rando_list)
-      
-
-
-    def nextQuestion():
-      st.session_state['e2'] +=1
-
-    #a1 = studying_list[st.session_state.rando_list[0]][1]
-    #a2 = studying_list[st.session_state.rando_list[1]][1]
-    #a3 = studying_list[st.session_state.rando_list[2]][1]
-      #a4 = studying_list[st.session_state.rando_list[3]][1]
-  try:
       if st.session_state.e < len(studying_list):
         st.write("Question:",str(st.session_state.e+1),"/",str(len(studying_list)))
       #if korean_present_polite.getDefault_Name() == "Korean Present Polite Speech:":
@@ -177,7 +177,7 @@ if options != None or options == "":
 
         st.error("Nope")
         
-      st.button("->",on_click=nextQuestion)
+##      st.button("->",on_click=nextQuestion)
   except(IndexError):
     
     

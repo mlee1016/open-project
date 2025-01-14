@@ -39,8 +39,8 @@ for i in range(len(All_Japanese_lists)):
   korean_study_ist.append(f'{i+1}: {All_Japanese_lists[i].de_ko_name}')
                                                 
 
-if 'e' not in st.session_state:
-  st.session_state['e'] = 0
+if 'e2' not in st.session_state:
+  st.session_state['e2'] = 0
 
 options:str = st.selectbox("Pick a list to study:",(korean_study_ist),index=None,placeholder="Select List")
 studying_list = []
@@ -110,7 +110,7 @@ if options != None or options == "":
       #st.write("Feature activated!")
       studying_list = en_ko
       #for i in range (len(list(en_ko[st.session_state.a][1]))):
-      shuffle_list = list(en_ko[st.session_state.e][1])
+      shuffle_list = list(en_ko[st.session_state.e2][1])
       random.shuffle((shuffle_list))
       #st.write(*shuffle_list)
     #df1 = pd.DataFrame(studying_list)
@@ -143,7 +143,7 @@ if options != None or options == "":
       random.shuffle(st.session_state.rand_list)
         #print(*rand_list)
       st.session_state.rando_list = [st.session_state.rand_list[0],st.session_state.rand_list[1],st.session_state.rand_list[2]]
-      st.session_state.rando_list.append(st.session_state.e)
+      st.session_state.rando_list.append(st.session_state.e2)
       #print(*st.session_state.rando_list)
       random.shuffle(st.session_state.rando_list)
       return st.session_state.rando_list
@@ -152,7 +152,7 @@ if options != None or options == "":
 
 
     def nextQuestion():
-      st.session_state['e'] +=1
+      st.session_state['e2'] +=1
 
     #a1 = studying_list[st.session_state.rando_list[0]][1]
     #a2 = studying_list[st.session_state.rando_list[1]][1]
@@ -165,8 +165,8 @@ if options != None or options == "":
       
       #if on == False:
         #st.audio(All_Audio_korean[0][st.session_state['e']], format="wav/audio")
-      question = st.radio(f"What does this mean: {studying_list[st.session_state['e']][0]}",[" ",studying_list[rand_List(st.session_state.e)[0]][1],studying_list[rand_List(st.session_state.e)[1]][1],studying_list[rand_List(st.session_state.e)[2]][1],studying_list[rand_List(st.session_state.e)[3]][1]])
-      if studying_list[st.session_state.e][1] == question:
+      question = st.radio(f"What does this mean: {studying_list[st.session_state['e2']][0]}",[" ",studying_list[rand_List(st.session_state.e2)[0]][1],studying_list[rand_List(st.session_state.e2)[1]][1],studying_list[rand_List(st.session_state.e2)[2]][1],studying_list[rand_List(st.session_state.e2)[3]][1]])
+      if studying_list[st.session_state.e2][1] == question:
           st.success("Correct")
 
       elif " " == question:
@@ -190,7 +190,7 @@ if options != None or options == "":
     #st.balloons()
     if st.button("study again"):
       st.cache_data.clear()
-      st.session_state['e'] = 0
+      st.session_state['e2'] = 0
       studying_list = []
       en_ko = []
       st.rerun()

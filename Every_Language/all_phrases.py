@@ -18,6 +18,8 @@ nav2 = {
         #st.Page("listening-reading.py", title="Listening/Reading"),
         st.Page("Replicate_anki.py", title="Classic studying"),
         st.Page("stream_.py", title="Type-in"),
+        st.Page("korean_speech_recognition.py", title="Practice Speaking"),
+
 
     ],
     "Korean - Other options": [

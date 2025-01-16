@@ -1,7 +1,5 @@
 import speech_recognition as sr
-from pyaudio import *
 from Every_korean_ph import *
-from pydub import AudioSegment
 import streamlit as st
 
    #st.rerun()

@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 try: 
     prompt = " "
     some_list = []

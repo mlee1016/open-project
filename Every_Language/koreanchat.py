@@ -1,5 +1,4 @@
 import streamlit as st
-import time
 
 from list_of_phrases import *
 try: 

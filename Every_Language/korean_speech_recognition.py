@@ -1,7 +1,7 @@
 import speech_recognition
 from Every_korean_ph import *
 import streamlit as st
-import pyttsx3
+from pyttsx3 import *
 st.header('Testing speaking')
 korean_study_ist = []
 for i in range(len(All_korean_lists)):

@@ -3,13 +3,12 @@ import streamlit as st
 
 nav2 = {
 
-
     "Link to languges":[
         st.Page("Link_to_languages.py", title="Start"),
         st.Page("Add_a_phrase.py",title="Add phrase"),
 
-       
 
+        
     ],
 
     "1 KOREAN Study Options------       ": [

@@ -97,9 +97,9 @@ try:
     (*Ne, dasi malsseumdeurilgeyo.*) ''']
 
     easy_Phrases = []
-    for s in range(len(easy_phrases)):
+   # for s in range(len(easy_phrases)):
 
-        easy_Phrases.append(easy_phrases[s] +" : "+ Easy_phrases[s])
+       # easy_Phrases.append(easy_phrases[s] +" : "+ Easy_phrases[s])
     response_ = ['''**민준:** 안녕하세요! 저는 민준이에요. 이름이 뭐예요?
             (*Annyeonghaseyo! Jeoneun Minjun-ieyo. Ireumi mwoyeyo?*)
             *Hello! I’m Min-jun. What’s your name?*''',
@@ -159,7 +159,7 @@ try:
             '''**민준:** 감사합니다! 다음에 또 이야기해요.  
             (*Gamsahamnida! Daeume tto iyagihaeyo.*)  
             *Thank you! Let’s talk again next time.*  ''']
-    conversations = [q_a_response,easy_Phrases,response_]
+    conversations = [q_a_response,response_]
     opt = st.radio("Pick a list to chat:",name_of_list)
     opt2 = st.radio("Choose to lead or follow in conversation",["Lead","Follow"])
     for i in range(len(name_of_list)):

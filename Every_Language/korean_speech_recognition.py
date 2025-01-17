@@ -39,7 +39,6 @@ if options != None or options == "":
 
     if st.button("Press",help="press then speak"):
       with speech_recognition.Microphone() as source:
-          r.adjust_for_ambient_noise(source,duration=0.2)
           st.write("Talk")
           audio_text = r.listen(source)
           st.write("Time over, thanks")

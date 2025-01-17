@@ -155,7 +155,7 @@ try:
             '''**지훈:** 아, 그렇군요. 열심히 공부하세요!  
             (*A, geureokunyo. Yeolsimhi gongbuhaseyo!*)  
             *Oh, I see. Study hard!*  ''',
-
+ 
             '''**민준:** 감사합니다! 다음에 또 이야기해요.  
             (*Gamsahamnida! Daeume tto iyagihaeyo.*)  
             *Thank you! Let’s talk again next time.*  ''']

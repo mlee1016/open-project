@@ -5,7 +5,7 @@ import pyttsx3
 st.header('Testing speaking')
 korean_study_ist = []
 for i in range(len(All_korean_lists)):
-   
+
   korean_study_ist.append(f'{i+1}: {All_korean_lists[i].de_ko_name}')
                                                 
 

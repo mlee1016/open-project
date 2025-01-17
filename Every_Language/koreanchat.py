@@ -1,6 +1,6 @@
 import streamlit as st
 try: 
-    prompt = ""
+    prompt = " "
     some_list = []
     name_of_list = ["Introduction","Easy Phrases","Q/A"]
     q_a_response = ['''

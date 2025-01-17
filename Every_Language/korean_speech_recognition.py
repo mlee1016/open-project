@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition
 from Every_korean_ph import *
 import streamlit as st
 import pyttsx3
@@ -27,7 +27,7 @@ if options != None or options == "":
     #st.audio("100_Korean_Phrases_for_beginners_#02_formal_informal_Self-StudyKorean.wav",format="audio/wav")
     
     st.write(*studying_list[0])
-    r = sr.Recognizer()
+    r = speech_recognition.Recognizer()
     #lang = ""
     # Reading Microphone as source
     # listening the speech and store in audio_text variable
@@ -47,7 +47,7 @@ if options != None or options == "":
           
       try:
               # using google speech recognition
-            phrases_ =r.recognize_google(audio_text,language="ko-KR")
+            phrases_ = r.recognize_google(audio_text,language="ko-KR")
             st.write(phrases_)
       except:
             st.write("Sorry, I did not get that")

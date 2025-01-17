@@ -9,4 +9,5 @@ wheel==0.45.1
 numpy==2.2.1
 
 
+time
 SpeechRecognition==3.12.0

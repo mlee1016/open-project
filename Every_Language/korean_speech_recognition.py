@@ -1,7 +1,7 @@
 import speech_recognition as sr
 from Every_korean_ph import *
 import streamlit as st
-
+from pyaudio import *
    #st.rerun()
 st.header('Testing speaking')
 korean_study_ist = []

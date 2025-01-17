@@ -8,4 +8,4 @@ streamlit==1.41.1
 wheel==0.45.1
 numpy==2.2.1
 SpeechRecognition[audio]==3.12.0
-PyAudio==0.2.14
+pyaudio==0.2.14

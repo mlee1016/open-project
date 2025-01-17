@@ -1,6 +1,4 @@
 import streamlit as st
-
-from list_of_phrases import *
 try: 
     prompt = ""
     some_list = []

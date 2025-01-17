@@ -19,12 +19,12 @@ nav2 = {
         st.Page("Replicate_anki.py", title="Classic studying"),
         st.Page("stream_.py", title="Type-in"),
         st.Page("korean_speech_recognition.py", title="Practice Speaking"),
-        st.Page("koreanchat.py", title="Chat"),
 
 
     ],
     "Korean - Other options": [
         st.Page("lookat_list.py", title="All lists"),
+        st.Page("koreanchat.py", title="Chat"),
         st.Page("studyingphrases.py", title="Phrase's Definition"),
 
     ],

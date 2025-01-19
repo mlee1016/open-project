@@ -296,9 +296,9 @@ print(7, len(list(korean_particle_polite_words)))
     **A:** 네, 다시 말씀드릴게요. *Yes, I’ll say it again.*  
     (*Ne, dasi malsseumdeurilgeyo.*) ''']
 
-korean_q_a = Korean('Q and A',q_a_response)
+#korean_q_a = Korean('Q and A',q_a_response)
 All_korean_lists = [korean_useful_polite,korean_particle_polite,korean_past_polite2,korean_present_polite,
-korean_future_polite,korean_future_polite2,korean_past_polite,korean_q_a]
+korean_future_polite,korean_future_polite2,korean_past_polite]
 
 All_words_korean = [korean_useful_polite_words,korean_particle_polite_words,korean_past_polite2_words,
 korean_present_polite_words,korean_future_polite_words,korean_future_polite2_words,korean_past_polite_words]

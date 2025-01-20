@@ -42,7 +42,7 @@ if upload_file is not None:
       All_Japanese_lists.append(user_custom)
     elif la == "Russian":
       
-      user_custom = Korean(name_of_Phrases,user_phrase_1)
+      user_custom = Russian(name_of_Phrases,user_phrase_1)
       All_russian_lists.append(user_custom)
     else:
       st.error("Choose a language")

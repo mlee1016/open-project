@@ -209,6 +209,7 @@ korean_future_polite,korean_future_polite2,korean_past_polite]
 All_words_korean = [korean_useful_polite_words,korean_particle_polite_words,korean_past_polite2_words,
 korean_present_polite_words,korean_future_polite_words,korean_future_polite2_words,korean_past_polite_words]
 
+Every_chat = []
 All_Audio_korean = [None]*len(All_korean_lists)
 All_Audio_korean[0] = ko_polite_useful
 All_Audio_korean[3] = ko_polite_present

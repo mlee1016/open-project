@@ -33,15 +33,16 @@ st.markdown(
  
 
    #st.rerun()
-korean_study_ist = []
+russian_study_ist = []
 for i in range(len(All_russian_lists)):
    
-  korean_study_ist.append(f'{i+1}: {All_russian_lists[i].de_ko_name}')
+  
+        russian_study_ist.append(f'{i+1}: {All_russian_lists[i].de_ru_name}')
                                                 
 if 'e_ru' not in st.session_state:
   st.session_state['e_ru'] = 0
 
-options:str = st.selectbox("Pick a list to study:",(korean_study_ist),index=None,placeholder="Select List")
+options:str = st.selectbox("Pick a list to study:",(russian_study_ist),index=None,placeholder="Select List")
 studying_list = []
 if options != None or options == "":
   #st.cache_data.clear()
